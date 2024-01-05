@@ -1,0 +1,46 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function faktorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * faktorial(n - 1);
+            }
+        }
+
+        const hasilFaktorial = faktorial(5);
+        document.write("Faktorial dari 5 adalah: " + hasilFaktorial);
+
+    </script>
+    <script>
+        let numbr = 6;
+        let sum = 0;
+
+        for (let i = 1; i <= numbr; i++) {
+            sum += i;
+        }
+
+        document.write(`<p>Hasil pertambahan dari 1 hingga ${numbr} adalah: ${sum}</p>`);
+    </script>
+
+    <script>
+        let angka = 8;
+        let faktorial = 0;
+
+        for (let i = 1; i <= angka; i++) {
+            faktorial += i;
+        }
+
+        document.write(`<p>Hasil pertambahan dari ${angka} adalah: ${faktorial}</p>`);
+    </script>
+</body>
+</html>
